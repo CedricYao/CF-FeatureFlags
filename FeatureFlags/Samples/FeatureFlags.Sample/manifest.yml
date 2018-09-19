@@ -4,6 +4,7 @@ applications:
   memory: 512m
   stack: windows2016
   buildpack: binary_buildpack
+  health-check-type: process
   command: cmd /c FeatureFlags.Sample.exe
   services:
   - FeatureFlags
