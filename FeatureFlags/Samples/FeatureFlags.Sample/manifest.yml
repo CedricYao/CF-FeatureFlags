@@ -1,0 +1,9 @@
+﻿---
+applications:
+- name: feature-flags
+  memory: 512m
+  stack: windows2016
+  buildpack: binary_buildpack
+  command: cmd /c FeatureFlags.Sample.exe
+  services:
+  - FeatureFlags
